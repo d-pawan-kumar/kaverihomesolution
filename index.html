@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaveri Home Solutions | Best Construction Company in Bengaluru</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Analytics (optional, add your tracking ID) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script> -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="founder">
+            <p>Founded by <strong>D. Pawan Kumar</strong><br>Leader of Kaveri Home Solutions</p>
+        </div>
+        <div class="logo">
+            <img src="https://placehold.co/150x60?text=Logo" alt="Kaveri Home Solutions Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="language-toggle">
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="ta">தமிழ் (Tamil)</option>
+                    <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1><span class="highlight">Kaveri Home Solutions</span> with <span class="highlight">Sri Om Shakthi Constructions</span></h1>
+            <p>Building Your Dream Homes, Apartments, Villas, and Commercial Spaces in Bengaluru</p>
+            <p>We specialize in end-to-end construction, including architectural design, interiors, and landscaping, tailored to Bengaluru's modern needs.</p>
+            <p><strong>Contact Us:</strong> <a href="https://wa.me/+919880479574" class="phone-link">+91 98804 79574 (WhatsApp)</a></p>
+            <a href="contact.html" class="cta-button">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <h2>Our Expertise</h2>
+        <ul>
+            <li>Custom Homes & Bungalows</li>
+            <li>Luxury Apartments</li>
+            <li>Commercial Complexes</li>
+            <li>Vastu-Compliant Designs</li>
+            <li>Interior Finishing & Landscaping</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 <span class="highlight">Kaveri Home Solutions</span> with <span class="highlight">Sri Om Shakthi Constructions</span>. All rights reserved.</p>
+        <p>J.P. Nagar, Bengaluru, India | <a href="https://wa.me/+919880479574">+91 98804 79574</a> | <a href="https://mail.google.com/mail/?view=cm&to=kumar98804abitha@gmail.com">Email Us</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Language toggle with basic translations
+        document.getElementById('language').addEventListener('change', function() {
+            const lang = this.value;
+            const heroTitle = document.querySelector('.hero h1');
+            const heroDesc = document.querySelector('.hero p:nth-child(2)');
+            const contactText = document.querySelector('.hero p:nth-child(3) strong');
+            const ctaButton = document.querySelector('.cta-button');
+
+            if (lang === 'ta') {
+                heroTitle.innerHTML = '<span class="highlight">காவேரி ஹோம் சொல்யூஷன்ஸ்</span> உடன் <span class="highlight">ஸ்ரீ ஓம் ஷாக்தி கன்ஸ்ட்ரக்ஷன்ஸ்</span>';
+                heroDesc.textContent = 'பெங்களூருவில் உங்கள் கனவு வீடுகள், அபார்ட்மென்டுகள், வில்லாக்களையும் வணிக இடங்களையும் கட்டுகிறோம்';
+                contactText.textContent = 'எங்களை தொடர்பு கொள்ளுங்கள்:';
+                ctaButton.textContent = 'இலவச மேற்கோள் பெறுங்கள்';
+            } else if (lang === 'kn') {
+                heroTitle.innerHTML = '<span class="highlight">ಕಾವೇರಿ ಹೋಮ್ ಸಾಲ್ಯೂಶನ್ಸ್</span> ಜೊತೆಗೆ <span class="highlight">ಶ್ರೀ ಓಂ ಶಕ್ತಿ ಕನ್ಸ್‌ಟ್ರಕ್ಷನ್ಸ್</span>';
+                heroDesc.textContent = 'ಬೆಂಗಳೂರಿನಲ್ಲಿ ನಿಮ್ಮ ಕನಸಿನ ಮನೆಗಳು, ಅಪಾರ್ಟ್‌ಮೆಂಟ್‌ಗಳು, ವಿಲ್ಲಾಗಳು ಮತ್ತು ವಾಣಿಜ್ಯ ಸ್ಥಳಗಳನ್ನು ನಿರ್ಮಿಸುತ್ತೇವೆ';
+                contactText.textContent = 'ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ:';
+                ctaButton.textContent = 'ಉಚಿತ ಮತ್ತು ಉಲ್ಲೇಖ ಪಡೆಯಿರಿ';
+            } else {
+                heroTitle.innerHTML = '<span class="highlight">Kaveri Home Solutions</span> with <span class="highlight">Sri Om Shakthi Constructions</span>';
+                heroDesc.textContent = 'Building Your Dream Homes, Apartments, Villas, and Commercial Spaces in Bengaluru';
+                contactText.textContent = 'Contact Us:';
+                ctaButton.textContent = 'Get a Free Quote';
+            }
+        });
+    </script>
+</body>
+</html>
